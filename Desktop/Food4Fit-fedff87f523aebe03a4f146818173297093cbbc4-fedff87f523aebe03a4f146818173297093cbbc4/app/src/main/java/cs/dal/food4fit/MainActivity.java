@@ -2,6 +2,7 @@ package cs.dal.food4fit;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
     private GridView gridView;
     private GridViewAdapter gridAdapter;
+    private Context context;
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
                     ExploreFragment exploreFragment = new ExploreFragment();
                     android.support.v4.app.FragmentTransaction exploreTransction = getSupportFragmentManager().beginTransaction();
                     exploreTransction.replace(R.id.content, exploreFragment).commit();
+
+
+
+
                     return true;
                 case R.id.navigation_cook:
                     mTextMessage.setText(R.string.title_cook);
@@ -79,10 +85,15 @@ public class MainActivity extends AppCompatActivity {
         // Edits By Mihyar
         btn_signup = (Button)findViewById(R.id.user);
 
+
+        context = this;
         gridView = (GridView) findViewById(R.id.gridView);
-        gridAdapter = new GridViewAdapter(this, R.layout.grid_item_layout, getData());
+        gridAdapter = new GridViewAdapter(context, R.layout.grid_item_layout, getData());
         gridView.setAdapter(gridAdapter);
+
     }
+
+
     public void goSignup (View view){
         startActivity(new Intent(this,LoginActivity.class));
         finish();
@@ -98,17 +109,7 @@ public class MainActivity extends AppCompatActivity {
         return imageItems;
     }
 
-    gridView.setOnItemClickListener(new OnItemClickListener() {
-        public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-            ImageItem item = (ImageItem) parent.getItemAtPosition(position);
-            //Create intent
-            Intent intent = new Intent(MainActivity.this, DetailsActivity.class);
-            intent.putExtra("title", item.getTitle());
-            intent.putExtra("image", item.getImage());
 
-            //Start details activity
-            startActivity(intent);
-        }
 
 
 }
