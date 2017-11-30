@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "580183075552",
+    "firebase_url": "https://food4fit-66fbc.firebaseio.com",
+    "project_id": "food4fit-66fbc",
+    "storage_bucket": "food4fit-66fbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580183075552:android:ff404a022eb45540",
+        "android_client_info": {
+          "package_name": "cs.dal.food4fit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580183075552-1i42uqb2h2ukkr29kr8hvfo0o8fmsl02.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cs.dal.food4fit",
+            "certificate_hash": "5cea7e67aeb70fcae7f75cc593c81c69558a3221"
+          }
+        },
+        {
+          "client_id": "580183075552-19fn8r1fj87ea4u40k4jlhku1os0sc7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4qqKi2B4rWaCNbIyrD26oCr5aPzgDeV0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580183075552-19fn8r1fj87ea4u40k4jlhku1os0sc7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

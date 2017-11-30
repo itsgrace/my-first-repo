@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cs.dal.food4fit.CookFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cooking_top"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="top"
+            android:src="@drawable/cook_default_img"></ImageView>
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            >
+            <Button
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="INGREDIENTS"
+                android:layout_marginLeft="50dp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/instructions"
+                android:text="INSTRUCTIONS"
+                android:layout_marginLeft="50dp"
+                />
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/list_item"></ListView>
+    </LinearLayout>
+
+</FrameLayout>

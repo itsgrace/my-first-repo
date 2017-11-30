@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/settings_profile"
+            android:icon="@drawable/account"
+            android:title="@string/settings_account"/>
+        <item
+            android:id="@+id/settings_logout"
+            android:icon="@drawable/settings_logout"
+            android:title="@string/settings_signout"/>
+    </group>
+
+</menu>
